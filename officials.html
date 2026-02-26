@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Officials - Barangay Manoc-Manoc</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #1a5276;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      font-size: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    nav ul a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero */
+    .hero {
+      background-color: #2e86c1;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    /* Content */
+    .content {
+      max-width: 860px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    /* Captain Highlight Card */
+    .captain-card {
+      background: linear-gradient(135deg, #1a5276, #2e86c1);
+      color: white;
+      border-radius: 12px;
+      padding: 30px;
+      text-align: center;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .captain-card .badge {
+      font-size: 50px;
+      margin-bottom: 10px;
+    }
+
+    .captain-card h3 {
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      opacity: 0.85;
+      margin-bottom: 6px;
+    }
+
+    .captain-card h2 {
+      font-size: 28px;
+      margin-bottom: 6px;
+    }
+
+    .captain-card p {
+      font-size: 15px;
+      opacity: 0.9;
+    }
+
+    /* Section Title */
+    .section-title {
+      font-size: 20px;
+      color: #1a5276;
+      margin-bottom: 16px;
+      border-bottom: 3px solid #2e86c1;
+      padding-bottom: 8px;
+    }
+
+    /* Councilors Grid */
+    .councilors-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 40px;
+    }
+
+    .councilor-card {
+      background-color: white;
+      border-radius: 8px;
+      padding: 18px 20px;
+      flex: 1 1 220px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-left: 5px solid #2e86c1;
+    }
+
+    .councilor-card .icon {
+      font-size: 24px;
+      margin-bottom: 6px;
+    }
+
+    .councilor-card h4 {
+      font-size: 15px;
+      color: #1a5276;
+      margin-bottom: 4px;
+    }
+
+    .councilor-card p {
+      font-size: 13px;
+      color: #777;
+    }
+
+    /* Table */
+    .other-officials {
+      margin-bottom: 40px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    thead {
+      background-color: #1a5276;
+      color: white;
+    }
+
+    thead th {
+      padding: 14px 20px;
+      text-align: left;
+      font-size: 15px;
+    }
+
+    tbody tr {
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    tbody tr:last-child {
+      border-bottom: none;
+    }
+
+    tbody tr:hover {
+      background-color: #eaf4fc;
+    }
+
+    tbody td {
+      padding: 14px 20px;
+      font-size: 15px;
+    }
+
+    tbody td:last-child {
+      color: #2e86c1;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1a5276;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <h1>Barangay Manoc-Manoc</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="officials.html">Officials</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h2>👥 Barangay Officials & Employees</h2>
+    <p>Manocmanoc, Malay, Aklan</p>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+
+    <!-- Punong Barangay -->
+    <div class="captain-card">
+      <div class="badge">🏛️</div>
+      <h3>Punong Barangay</h3>
+      <h2>Danilo G. Delos Santos</h2>
+      <p>Barangay Captain of Manoc-Manoc, Malay, Aklan</p>
+    </div>
+
+    <!-- Sangguniang Barangay Members -->
+    <h2 class="section-title">🗳️ Sangguniang Barangay Members</h2>
+    <div class="councilors-grid">
+
+      <div class="councilor-card">
+        <div class="icon">👤</div>
+        <h4>Roy Joey G. Delos Santos</h4>
+        <p>Sangguniang Barangay Member</p>
+      </div>
+
+      <div class="councilor-card">
+        <div class="icon">👤</div>
+        <h4>Cristian B. Gelito</h4>
+        <p>Sangguniang Barangay Member</p>
+      </div>
+
+      <div class="councilor-card">
+        <div class="icon">👤</div>
+        <h4>Charlemagne Nichole V. Gallenero</h4>
+        <p>Sangguniang Barangay Member</p>
+      </div>
+
+      <div class="councilor-card">
+        <div class="icon">👤</div>
+        <h4>Ernesto B. Cruz Jr.</h4>
+        <p>Sangguniang Barangay Member</p>
+      </div>
+
+      <div class="councilor-card">
+        <div class="icon">👤</div>
+        <h4>Val M. Pagsuguiron</h4>
+        <p>Sangguniang Barangay Member</p>
+      </div>
+
+      <div class="councilor-card">
+        <div class="icon">👤</div>
+        <h4>Jophil C. Martin</h4>
+        <p>Sangguniang Barangay Member</p>
+      </div>
+
+      <div class="councilor-card">
+        <div class="icon">👤</div>
+        <h4>Rafael B. Gregorio</h4>
+        <p>Sangguniang Barangay Member</p>
+      </div>
+
+    </div>
+
+    <!-- Other Officials -->
+    <div class="other-officials">
+      <h2 class="section-title">📋 Other Officials & Employees</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Designation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ma. Hitomi L. Gato</td>
+            <td>SK Chairman</td>
+          </tr>
+          <tr>
+            <td>Shiela S. Salas</td>
+            <td>Barangay Secretary</td>
+          </tr>
+          <tr>
+            <td>Jacquiline J. Patanao</td>
+            <td>Barangay Treasurer</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Made for school activity | Barangay Manoc-Manoc | Boracay Island, Malay, Aklan</p>
+  </footer>
+
+</body>
+</html>

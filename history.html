@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History - Barangay Manoc-Manoc</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #1a5276;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      font-size: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    nav ul a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Banner */
+    .hero {
+      background-color: #2e86c1;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    /* Main Content Area */
+    .content {
+      max-width: 860px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    /* Timeline Section */
+    .timeline-title {
+      text-align: center;
+      font-size: 22px;
+      color: #1a5276;
+      margin-bottom: 30px;
+    }
+
+    .timeline {
+      position: relative;
+      padding-left: 30px;
+      border-left: 4px solid #2e86c1;
+    }
+
+    .timeline-item {
+      margin-bottom: 35px;
+      position: relative;
+    }
+
+    /* Circle dot on the timeline */
+    .timeline-item::before {
+      content: '';
+      width: 16px;
+      height: 16px;
+      background-color: #2e86c1;
+      border-radius: 50%;
+      position: absolute;
+      left: -40px;
+      top: 5px;
+    }
+
+    .timeline-item h3 {
+      color: #1a5276;
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+
+    .timeline-item .year {
+      display: inline-block;
+      background-color: #2e86c1;
+      color: white;
+      font-size: 13px;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 8px;
+    }
+
+    .timeline-item p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #444;
+    }
+
+    /* Fun Fact Box */
+    .fact-box {
+      background-color: #d6eaf8;
+      border-left: 5px solid #2e86c1;
+      padding: 20px;
+      border-radius: 6px;
+      margin: 40px 0;
+    }
+
+    .fact-box h3 {
+      color: #1a5276;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .fact-box p {
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    /* Quick Facts Cards */
+    .facts-section {
+      margin: 40px 0;
+    }
+
+    .facts-section h2 {
+      text-align: center;
+      font-size: 22px;
+      color: #1a5276;
+      margin-bottom: 20px;
+    }
+
+    .facts-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .fact-card {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .fact-card .icon {
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .fact-card h4 {
+      color: #1a5276;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .fact-card p {
+      font-size: 13px;
+      color: #555;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1a5276;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <h1>Barangay Manoc-Manoc</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="officials.html">Officials</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Banner -->
+  <div class="hero">
+    <h2>📜 History of Barangay Manoc-Manoc</h2>
+    <p>Malay, Aklan | Boracay Island, Western Visayas, Philippines</p>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+
+    <!-- Fun Fact: Name Origin -->
+    <div class="fact-box">
+      <h3>🐔 How Did It Get Its Name?</h3>
+      <p>
+        The name <strong>"Manoc-Manoc"</strong> comes from the local Aklanon word meaning <strong>"just like a chicken."</strong>
+        This is because of a massive rock formation along the coast that, when covered with shrubs,
+        looked like a giant chicken sitting on a sandbar. Even the Spanish colonizers noticed it —
+        they called the place <em>"Buenavista de Galle"</em>, meaning <em>"good view of the chicken"</em>
+        — but the native name <strong>Manoc-Manoc</strong> stuck and is used to this day.
+      </p>
+    </div>
+
+    <!-- Timeline -->
+    <h2 class="timeline-title">🕰️ Timeline of Manoc-Manoc</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <span class="year">Pre-Spanish Era</span>
+        <h3>The First Settlers</h3>
+        <p>
+          Boracay Island, including the area of Manoc-Manoc, was originally home to the
+          <strong>Panay Bukidnon</strong> and <strong>Ati people</strong> (Negritos).
+          The island was sometimes called the <em>"Land of the Atis."</em>
+          Manoc-Manoc sits on the eastern coast of Boracay, facing the mainland of Panay Island.
+          Its calm waters made it a natural shelter for traders traveling by sea on their swift <em>vintas</em> (native boats).
+          Some natives who stopped to rest eventually stayed and became the barangay's first farmers and inhabitants.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <span class="year">Spanish Colonial Period (Late 1800s)</span>
+        <h3>First Organized Barangay</h3>
+        <p>
+          During the later part of the Spanish period, Manoc-Manoc was temporarily organized
+          as a barangay by <strong>Cabeza Etok (Aniceto Maming)</strong>, who became
+          its first <em>Cabeza de Barangay del Barrio</em> (Barangay Head).
+          The Spanish also referred to it as <em>"Buenavista de Galle"</em>,
+          but the locals kept calling it Manoc-Manoc.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <span class="year">June 15, 1949</span>
+        <h3>Municipality of Malay is Created</h3>
+        <p>
+          Through <strong>Republic Act No. 381</strong>, the Municipality of Malay was officially
+          established. Manoc-Manoc became one of its recognized barangays, along with Balabag and Yapak —
+          the three barangays that make up Boracay Island.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <span class="year">April 25, 1956</span>
+        <h3>Aklan Becomes a Province</h3>
+        <p>
+          Aklan was established as an independent province, separating from Capiz.
+          The Municipality of Malay, including Barangay Manoc-Manoc, became officially part of Aklan.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <span class="year">1960s – 1970s</span>
+        <h3>Boracay Gains Attention</h3>
+        <p>
+          Boracay began attracting families from Panay Island who discovered its beautiful beaches.
+          Before tourism, the island's economy relied mostly on farming, fishing, and
+          <strong>copra (coconut) production</strong>. Manoc-Manoc was a quiet fishing community during this time.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <span class="year">1978</span>
+        <h3>Boracay Introduced to the World</h3>
+        <p>
+          German writer <strong>Jens Peter</strong> published a book describing Boracay as
+          <em>"Paradise on Earth."</em> This marked the beginning of the island's tourism boom.
+          Manoc-Manoc and all of Boracay began to slowly transform from a quiet island
+          into a growing tourist destination.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <span class="year">1990 – 2020</span>
+        <h3>Rapid Population Growth</h3>
+        <p>
+          As tourism grew, so did Manoc-Manoc's population. From just <strong>2,794 people in 1990</strong>,
+          the barangay grew to <strong>20,504 people by 2020</strong> — an increase of over 17,000 people
+          in just 30 years. By 2020, Manoc-Manoc made up <strong>34.13%</strong> of the entire
+          population of Malay, Aklan.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <span class="year">2005 – 2006</span>
+        <h3>Boracay Declared a Special Tourism Zone</h3>
+        <p>
+          Boracay was declared a <strong>Special Tourism Zone</strong> in 2005.
+          In 2006, the Philippine Tourism Authority (PTA) was given administrative control
+          over the island, bringing more development and regulation to the area.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <span class="year">April – October 2018</span>
+        <h3>The Boracay Closure & Rehabilitation</h3>
+        <p>
+          Due to serious environmental issues — especially an overloaded sewage system —
+          President Rodrigo Duterte ordered a <strong>six-month closure</strong> of Boracay Island.
+          The island was rehabilitated and modernized. Buildings were set back from the shoreline,
+          vendors were regulated, and infrastructure was improved.
+          In <strong>October 2018</strong>, Boracay, including Manoc-Manoc, reopened to tourists
+          with new rules to protect the environment and control overcrowding.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <span class="year">Today</span>
+        <h3>A Growing Community</h3>
+        <p>
+          Today, Barangay Manoc-Manoc is one of the most populated barangays in Malay, Aklan.
+          It balances its role as part of the Philippines' most famous tourist island while still
+          preserving its identity as a community of local fisherfolk and residents.
+          Manoc-Manoc's coast remains a peaceful alternative to the busy White Beach —
+          a place where history, culture, and natural beauty continue to coexist.
+        </p>
+      </div>
+
+    </div>
+    <!-- End Timeline -->
+
+    <!-- Quick Facts -->
+    <div class="facts-section">
+      <h2>📊 Quick Facts</h2>
+      <div class="facts-grid">
+        <div class="fact-card">
+          <div class="icon">📍</div>
+          <h4>Location</h4>
+          <p>Eastern coast of Boracay Island, Malay, Aklan</p>
+        </div>
+        <div class="fact-card">
+          <div class="icon">👥</div>
+          <h4>Population (2020)</h4>
+          <p>20,504 people</p>
+        </div>
+        <div class="fact-card">
+          <div class="icon">🏠</div>
+          <h4>Households (2015)</h4>
+          <p>3,298 households</p>
+        </div>
+        <div class="fact-card">
+          <div class="icon">🐔</div>
+          <h4>Name Meaning</h4>
+          <p>"Just like a chicken" in Aklanon</p>
+        </div>
+        <div class="fact-card">
+          <div class="icon">🗺️</div>
+          <h4>Region</h4>
+          <p>Western Visayas (Region VI)</p>
+        </div>
+        <div class="fact-card">
+          <div class="icon">🏛️</div>
+          <h4>Province</h4>
+          <p>Aklan (since 1956)</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- End Content -->
+
+  <!-- Footer -->
+  <footer>
+    <p>Made for school activity | Barangay Manoc-Manoc | Boracay Island, Malay, Aklan</p>
+  </footer>
+
+</body>
+</html>
